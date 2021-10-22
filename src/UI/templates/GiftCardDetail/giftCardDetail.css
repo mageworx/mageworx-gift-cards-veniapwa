@@ -1,0 +1,3 @@
+.giftCardOptionsTitle {
+    composes: title from '~@magento/venia-ui/lib/components/ProductOptions/option.css';
+}

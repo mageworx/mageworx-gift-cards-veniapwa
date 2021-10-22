@@ -1,0 +1,23 @@
+.root {
+    padding: 1rem 0;
+}
+
+@media (min-width: 1024px) {
+    .root {
+        align-items: start;
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-areas:
+            'images title'
+            'images errors'
+            'images giftCardAmount'
+            'images giftCardInfo'
+            'images options'
+            'images quantity'
+            'images cart'
+            'images .';
+        grid-template-columns: 1.5625fr 1fr;
+        grid-template-rows: repeat(6, min-content) 1fr [fold];
+        padding: 2.5rem 1rem;
+    }
+}
