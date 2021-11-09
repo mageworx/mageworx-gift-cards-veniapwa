@@ -1,5 +1,5 @@
-const wrapUseAddToCartButton = (original) => {
-    return function useAddToCartButton (props, ...restArgs) {
+const wrapUseGalleryItem = (original) => {
+    return function useGalleryItem (props, ...restArgs) {
         const { ...defaultReturnData } = original(
             props,
             ...restArgs
@@ -16,4 +16,4 @@ const wrapUseAddToCartButton = (original) => {
     };
 };
 
-export default wrapUseAddToCartButton;
+export default wrapUseGalleryItem;
