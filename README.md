@@ -105,7 +105,7 @@ MiniCartProductListingGql_GiftCard.insertAfterSource(
 );
 
 const ProductListingGql_GiftCard = giftCardsTargetables.module(
-    '@magento/venia-ui/lib/components/CartPage/ProductListing/productListingFragments.js'
+    '@magento/peregrine/lib/talons/CartPage/ProductListing/productListingFragments.gql.js'
 );
 ProductListingGql_GiftCard.insertAfterSource(
     'items {\n',
@@ -118,26 +118,6 @@ const ItemsReviewFragmentsGql_GiftCard = giftCardsTargetables.module(
 ItemsReviewFragmentsGql_GiftCard.insertAfterSource(
     'items {\n',
     graphqlItemsFragmentForGiftCards
-);
-
-const PriceSummaryGql_GiftCard = giftCardsTargetables.module(
-    '@magento/peregrine/lib/talons/CartPage/PriceSummary/priceSummaryFragments.gql.js'
-);
-PriceSummaryGql_GiftCard.insertAfterSource(
-    'fragment PriceSummaryFragment on Cart {\n',
-    '\tapplied_mw_gift_cards {\n' +
-    '\tcode\n' +
-    '\tremaining {\n' +
-    '\tvalue\n' +
-    '\tcurrency_code\n' +
-    '\tlabel\n' +
-    '\t}\n' +
-    '\tapplied {\n' +
-    '\tvalue\n' +
-    '\tcurrency_code\n' +
-    '\tlabel\n' +
-    '\t}\n' +
-    '\t}\n'
 );
 /* MageWorx GiftCards-veniapwa end */
 ```

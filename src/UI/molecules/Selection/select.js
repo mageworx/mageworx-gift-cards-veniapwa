@@ -2,7 +2,7 @@ import React from 'react';
 import { ChevronDown as ChevronDownIcon } from 'react-feather';
 import { useStyle } from '@magento/venia-ui/lib/classify';
 import Icon from "@magento/venia-ui/lib/components/Icon";
-import getFormattedPrice from "../../../features/Common/getFormattedPrice/getFormattedPrice";
+import getFormattedPrice from "../../../features/common/getFormattedPrice/getFormattedPrice";
 import FieldIcons from "../Field/fieldIcons";
 import defaultClasses from './select.css';
 

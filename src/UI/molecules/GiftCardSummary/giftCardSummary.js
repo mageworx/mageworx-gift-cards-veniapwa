@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import {FormattedMessage, useIntl} from 'react-intl';
 import { useStyle } from '@magento/venia-ui/lib/classify';
-import getFormattedPrice from "../../../features/Common/getFormattedPrice/getFormattedPrice";
+import getFormattedPrice from "../../../features/common/getFormattedPrice/getFormattedPrice";
 
 const MINUS_SYMBOL = '-';
 
