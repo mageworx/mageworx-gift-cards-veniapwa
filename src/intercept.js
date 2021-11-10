@@ -1,5 +1,4 @@
 module.exports = targets => {
-    // For extends productFullDetail component in local-intercept
     const { Targetables } = require('@magento/pwa-buildpack');
     const targetables = Targetables.using(targets);
     targetables.setSpecialFeatures('esModules','cssModules');
