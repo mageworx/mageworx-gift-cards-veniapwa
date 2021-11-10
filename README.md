@@ -125,13 +125,14 @@ ItemsReviewFragmentsGql_GiftCard.insertAfterSource(
 ```
 const { Targetables } = require('@magento/pwa-buildpack');
 ```
-6. Let's run your project
+6. Create folder `mageworx/configs/GiftCards` in the root of your project. Copy config `@mageworx/GiftCards-veniapwa/documentation/date.locale.js` from the package to created folder `mageworx/configs/GiftCards`.
+7. Let's run your project
 ```
 yarn watch
 ```
 
 ## Localization of datepicker
-You can add localizations that you need in `@mageworx/GiftCards-veniapwa/src/date.locale.js`, for example:
+You can add localizations that you need in `mageworx/configs/GiftCards/date.locale.js`, for example:
 ```
 import { 
     enGB, 
