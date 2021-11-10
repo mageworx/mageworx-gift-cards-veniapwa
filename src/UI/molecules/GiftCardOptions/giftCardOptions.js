@@ -24,23 +24,23 @@ const GiftCardOptions = props => {
 
     const messages = {
         "to_email": formatMessage({
-            id: 'MageWorx.giftCardSection.to_email',
+            id: 'mageworx.giftCardSection.to_email',
             defaultMessage: 'To email'
         }),
         "to_name": formatMessage({
-            id: 'MageWorx.giftCardSection.to_name',
+            id: 'mageworxx.giftCardSection.to_name',
             defaultMessage: 'To name'
         }),
         "from_name": formatMessage({
-            id: 'MageWorx.giftCardSection.from_name',
+            id: 'mageworx.giftCardSection.from_name',
             defaultMessage: 'From name'
         }),
         "your_message": formatMessage({
-            id: 'MageWorx.giftCardSection.your_message',
+            id: 'mageworx.giftCardSection.your_message',
             defaultMessage: 'Message'
         }),
         "delivery_date": formatMessage({
-            id: 'MageWorx.giftCardSection.delivery_date',
+            id: 'mageworx.giftCardSection.delivery_date',
             defaultMessage: 'Delivery date'
         }),
     }

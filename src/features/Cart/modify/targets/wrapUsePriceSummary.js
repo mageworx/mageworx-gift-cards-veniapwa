@@ -24,7 +24,6 @@ const wrapUsePriceSummary = (original) => {
         return {
             ...defaultReturnData,
             hasError: defaultReturnData.hasError || !!error,
-            hasItems: defaultReturnData.hasItems || !!data.cart.items.length,
             isLoading: defaultReturnData.isLoading || !!loading,
             flatData: {...defaultReturnData.flatData, giftCards}
         };

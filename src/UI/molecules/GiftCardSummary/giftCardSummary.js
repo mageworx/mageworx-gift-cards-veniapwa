@@ -23,7 +23,7 @@ export default props => {
         <Fragment>
             <span className={classes.lineItemLabel}>
                 <FormattedMessage
-                    id={'MageWorx.giftCardSummary.lineItemLabel'}
+                    id={'mageworx.giftCardSummary.lineItemLabel'}
                     defaultMessage={'Gift Card(s) applied'}
                 />
             </span>

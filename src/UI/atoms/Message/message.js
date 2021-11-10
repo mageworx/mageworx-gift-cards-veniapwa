@@ -1,6 +1,6 @@
 import React from 'react';
 
-import defaultClasses from './message.css';
+import defaultClasses from './message.module.css';
 import { useStyle } from '@magento/venia-ui/lib/classify';
 
 const Message = props => {

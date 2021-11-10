@@ -1,6 +1,6 @@
 import React from 'react';
 import { useStyle } from '@magento/venia-ui/lib/classify';
-import defaultClasses from './field.css';
+import defaultClasses from './field.module.css';
 import Message from "../../atoms/Message/message";
 
 const Field = props => {

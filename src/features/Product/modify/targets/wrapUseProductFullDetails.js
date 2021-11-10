@@ -157,7 +157,7 @@ const wrapUseProductFullDetails = (original) => {
             let amounts = [];
             const option_default_price = {value: productDetails.price.value, label: getFormattedPrice(productDetails.price.value, productDetails.price.currency, locale)};
             const LABEL_OTHER_AMOUNT = formatMessage({
-                id: 'MageWorx.giftCards.other_amount',
+                id: 'mageworx.giftCards.other_amount',
                 defaultMessage: 'Custom amount'
             });
             const option_custom_amount = {value: "other_amount", label: LABEL_OTHER_AMOUNT};

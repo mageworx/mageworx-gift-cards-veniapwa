@@ -21,7 +21,7 @@ const GiftCard = props => {
                 <span className={classes.code}>{code}</span>
                 <span className={classes.balance}>
                     <FormattedMessage
-                        id={'MageWorx.giftCard.balance'}
+                        id={'mageworx.giftCard.balance'}
                         defaultMessage={'Balance: '}
                     />
                     {currentBalance}
@@ -32,7 +32,7 @@ const GiftCard = props => {
                 onClick={removeGiftCardWithCode}
             >
                 <FormattedMessage
-                    id={'MageWorx.giftCard.remove'}
+                    id={'mageworx.giftCard.remove'}
                     defaultMessage={'Remove'}
                 />
             </LinkButton>
