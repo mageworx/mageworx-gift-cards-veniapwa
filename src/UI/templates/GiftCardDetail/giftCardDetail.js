@@ -1,9 +1,9 @@
 import React from 'react';
+import { useIntl } from "react-intl";
 import {useStyle} from "@magento/venia-ui/lib/classify";
 import defaultClasses from "./giftCardDetail.module.css";
 import EmailForm from "../../organisms/EmailForm/emailForm";
 import AmountForm from "../../organisms/AmountForm/amountForm";
-import { useIntl } from "react-intl";
 
 const GiftCardDetail = props => {
     const {
