@@ -124,7 +124,7 @@ ItemsReviewFragmentsGql_GiftCard.insertAfterSource(
 const { Targetables } = require('@magento/pwa-buildpack');
 ```
 4. Create folder `mageworx/configs/GiftCards` in the root of your project. Copy config `@mageworx/gift-cards-veniapwa/documentation/date.locale.js` from the package to created folder `mageworx/configs/GiftCards`.
-5. Let's run your project
+5. Let's run your project.
 ```
 yarn watch
 ```
