@@ -7,7 +7,9 @@
     "type": "git",
     "url": "https://github.com/mageworx/mageworx-gift-cards-veniapwa"
   },
-  "private": "false",
+  "publishConfig": {
+    "access":"public"
+  },
   "keywords": [
     "magento2-extension",
     "magento2-module",
