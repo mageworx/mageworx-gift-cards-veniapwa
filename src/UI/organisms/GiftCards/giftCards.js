@@ -8,19 +8,18 @@ import { isRequired } from '@magento/venia-ui/lib/util/formValidators';
 import Button from '@magento/venia-ui/lib/components/Button';
 import Field from '@magento/venia-ui/lib/components/Field';
 import Icon from '@magento/venia-ui/lib/components/Icon';
+import LinkButton from '@magento/venia-ui/lib/components/LinkButton';
 import LoadingIndicator from '@magento/venia-ui/lib/components/LoadingIndicator';
 import TextInput from '@magento/venia-ui/lib/components/TextInput';
 import defaultClasses from './giftCards.module.css';
 import { useGiftCards } from '../../../features/Cart/GiftCards/useGiftCards';
 import GiftCard from './giftCard';
-
 import {
     GET_APPLIED_GIFT_CARDS_QUERY,
     GET_GIFT_CARD_BALANCE_QUERY,
     APPLY_GIFT_CARD_MUTATION,
     REMOVE_GIFT_CARD_MUTATION
 } from '../../../features/Cart/GiftCards/queries/giftCardQueries.gql';
-import LinkButton from '@magento/venia-ui/lib/components/LinkButton';
 import getFormattedPrice from "../../../features/common/getFormattedPrice/getFormattedPrice";
 
 const errorIcon = (
