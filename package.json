@@ -8,9 +8,6 @@
     "url": "https://github.com/mageworx/mageworx-gift-cards-veniapwa"
   },
   "private": "false",
-  "publishConfig": {
-    "@edlay:registry": "https://github.com/edlay17/mageworx-gift-cards-veniapwa"
-  },
   "keywords": [
     "magento2-extension",
     "magento2-module",
