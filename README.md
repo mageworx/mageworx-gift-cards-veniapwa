@@ -12,7 +12,7 @@ This add-on integrates [Gift Cards extension for Magento 2](https://www.mageworx
 1. Run `yarn add @mageworx/gift-cards-veniapwa` or `npm i @mageworx/gift-cards-veniapwa` in the root of your project
 2. Open `local-intercept.js` in the root of your project and put this code into `function localIntercept`. Pay attention, `function localIntercept` must have `targets` as parameter (you can see example of `local-intercept.js` in `@mageworx/gift-cards-veniapwa/documentation`).
 ```
-/* MageWorx GiftCards-veniapwa start */
+/* MageWorx gift-cards-veniapwa start */
 const giftCardsTargetables = Targetables.using(targets);
 
 const ProductDetails_giftCards = giftCardsTargetables.reactComponent(
@@ -117,7 +117,7 @@ ItemsReviewFragmentsGql_GiftCard.insertAfterSource(
     'items {\n',
     graphqlItemsFragmentForGiftCards
 );
-/* MageWorx GiftCards-veniapwa end */
+/* MageWorx gift-cards-veniapwa end */
 ```
 3. Check that your `local-intercept` has this code before `module.exports`, if don't have you should add them (you can see example of `local-intercept.js` in `@mageworx/gift-cards-veniapwa/documentation`)
 ```

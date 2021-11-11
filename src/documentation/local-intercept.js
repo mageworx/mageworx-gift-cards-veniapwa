@@ -1,7 +1,7 @@
 const { Targetables } = require('@magento/pwa-buildpack');
 
 function localIntercept(targets) {
-    /* MageWorx GiftCards-veniapwa start */
+    /* MageWorx gift-cards-veniapwa start */
     const giftCardsTargetables = Targetables.using(targets);
 
     const ProductDetails_giftCards = giftCardsTargetables.reactComponent(
@@ -106,7 +106,7 @@ function localIntercept(targets) {
         'items {\n',
         graphqlItemsFragmentForGiftCards
     );
-    /* MageWorx GiftCards-veniapwa end */
+    /* MageWorx gift-cards-veniapwa end */
 }
 
 module.exports = localIntercept;
