@@ -4,7 +4,7 @@ This add-on integrates [Gift Cards extension for Magento 2](https://www.mageworx
 ## Features
 - Add product type MageWorxGiftCards
 - Add fields to the gift card product page
-- Apply, remove gift cards to the cart
+- Apply, remove gift cards from the cart
 - Check gift card balance on the cart page
 - Show gift cards summary amount on the cart page
 
