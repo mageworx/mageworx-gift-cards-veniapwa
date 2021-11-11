@@ -10,7 +10,7 @@ This add-on integrates [Gift Cards extension for Magento 2](https://www.mageworx
 
 ## Upload the extension
 1. Run `yarn add @mageworx/gift-cards-veniapwa` or `npm i @mageworx/gift-cards-veniapwa` in the root of your project
-2. Open `local-intercept.js` in the root of your project and put this code into `function localIntercept`. Pay attention, `function localIntercept` must have `targets` as parameter (you can see example of `local-intercept.js` in `@mageworx/GiftCards-veniapwa/documentation`).
+2. Open `local-intercept.js` in the root of your project and put this code into `function localIntercept`. Pay attention, `function localIntercept` must have `targets` as parameter (you can see example of `local-intercept.js` in `@mageworx/gift-cards-veniapwa/documentation`).
 ```
 /* MageWorx GiftCards-veniapwa start */
 const giftCardsTargetables = Targetables.using(targets);
@@ -119,11 +119,11 @@ ItemsReviewFragmentsGql_GiftCard.insertAfterSource(
 );
 /* MageWorx GiftCards-veniapwa end */
 ```
-3. Check that your `local-intercept` has this code before `module.exports`, if don't have you should add them (you can see example of `local-intercept.js` in `@mageworx/GiftCards-veniapwa/documentation`)
+3. Check that your `local-intercept` has this code before `module.exports`, if don't have you should add them (you can see example of `local-intercept.js` in `@mageworx/gift-cards-veniapwa/documentation`)
 ```
 const { Targetables } = require('@magento/pwa-buildpack');
 ```
-4. Create folder `mageworx/configs/GiftCards` in the root of your project. Copy config `@mageworx/GiftCards-veniapwa/documentation/date.locale.js` from the package to created folder `mageworx/configs/GiftCards`.
+4. Create folder `mageworx/configs/GiftCards` in the root of your project. Copy config `@mageworx/gift-cards-veniapwa/documentation/date.locale.js` from the package to created folder `mageworx/configs/GiftCards`.
 5. Let's run your project
 ```
 yarn watch
