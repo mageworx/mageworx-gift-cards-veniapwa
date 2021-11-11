@@ -9,7 +9,7 @@ This add-on integrates [Gift Cards extension for Magento 2](https://www.mageworx
 - Show gift cards summary amount on the cart page
 
 ## Upload the extension
-1. Run `npm i @mageworx/gift-cards-veniapwa` or `yarn add @mageworx/gift-cards-veniapwa` in the root of your project
+1. Run `yarn add @mageworx/gift-cards-veniapwa` or `npm i @mageworx/gift-cards-veniapwa` in the root of your project
 2. Open `local-intercept.js` in the root of your project and put this code into `function localIntercept`. Pay attention, `function localIntercept` must have `targets` as parameter (you can see example of `local-intercept.js` in `@mageworx/GiftCards-veniapwa/documentation`).
 ```
 /* MageWorx GiftCards-veniapwa start */
