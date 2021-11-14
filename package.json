@@ -1,11 +1,11 @@
 {
-  "name": "@edlay/giftcards-veniapwa",
-  "author": "edlay",
-  "version": "1.3.0",
+  "name": "@mageworx/giftcards-veniapwa",
+  "author": "mageworx",
+  "version": "1.2.0",
   "homepage": "https://www.mageworx.com/magento-2-gift-cards.html",
   "repository": {
     "type": "git",
-    "url": "https://github.com/edlay17/mageworx-gift-cards-veniapwa"
+    "url": "https://github.com/mageworx/mageworx-gift-cards-veniapwa"
   },
   "keywords": [
     "magento2-extension",
