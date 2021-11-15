@@ -1,13 +1,13 @@
 const { Targetables } = require('@magento/pwa-buildpack');
 
 function localIntercept(targets) {
-    /* MageWorx giftcards-veniapwa start */
+    /* MageWorx gift-cards-veniapwa start */
     const giftCardsTargetables = Targetables.using(targets);
 
     const ProductDetails_giftCards = giftCardsTargetables.reactComponent(
         '@magento/venia-ui/lib/components/ProductFullDetail/productFullDetail.js'
     );
-    const GiftCardOptions = ProductDetails_giftCards.addImport("{GiftCardDetail} from '../../../../../@mageworx/giftcards-veniapwa/src/UI/templates/GiftCardDetail'");
+    const GiftCardOptions = ProductDetails_giftCards.addImport("{GiftCardDetail} from '../../../../../@mageworx/gift-cards-veniapwa/src/UI/templates/GiftCardDetail'");
     ProductDetails_giftCards.insertAfterJSX(
         '<section className={classes.imageCarousel} />',
         `<${GiftCardOptions} className={classes.giftCardOptions} classes={ defaultClasses } giftCardAttributes={productDetails.giftCardAttributes} giftCardFormData={productDetails.giftCardFormData} />`
@@ -24,7 +24,7 @@ function localIntercept(targets) {
     const PriceSummary_giftCards = giftCardsTargetables.reactComponent(
         '@magento/venia-ui/lib/components/CartPage/PriceSummary/priceSummary.js'
     );
-    const GiftCardSummaryMW = PriceSummary_giftCards.addImport("{GiftCardSummaryMW} from '../../../../../../@mageworx/giftcards-veniapwa/src/UI/molecules/GiftCardSummary'");
+    const GiftCardSummaryMW = PriceSummary_giftCards.addImport("{GiftCardSummaryMW} from '../../../../../../@mageworx/gift-cards-veniapwa/src/UI/molecules/GiftCardSummary'");
     PriceSummary_giftCards.replaceJSX(
         '<GiftCardSummary/>',
         `<${GiftCardSummaryMW} classes={{lineItemLabel: classes.lineItemLabel, price: priceClass}} data={giftCards}/>`
@@ -33,7 +33,7 @@ function localIntercept(targets) {
     const CartPriceAdjustments_giftCards = giftCardsTargetables.reactComponent(
         '@magento/venia-ui/lib/components/CartPage/PriceAdjustments/priceAdjustments.js'
     );
-    const CartGiftCardSectionMW = CartPriceAdjustments_giftCards.addImport("{GiftCardSectionMW} from '../../../../../../@mageworx/giftcards-veniapwa/src/UI/templates/GiftCardSection'");
+    const CartGiftCardSectionMW = CartPriceAdjustments_giftCards.addImport("{GiftCardSectionMW} from '../../../../../../@mageworx/gift-cards-veniapwa/src/UI/templates/GiftCardSection'");
     CartPriceAdjustments_giftCards.replaceJSX(
         '<GiftCardSection/>',
         `<${CartGiftCardSectionMW} setIsCartUpdating={setIsCartUpdating}/>`
@@ -42,7 +42,7 @@ function localIntercept(targets) {
     const CheckoutPriceAdjustments_giftCards = giftCardsTargetables.reactComponent(
         '@magento/venia-ui/lib/components/CheckoutPage/PriceAdjustments/priceAdjustments.js'
     );
-    const CheckoutGiftCardSectionMW = CheckoutPriceAdjustments_giftCards.addImport("{GiftCardSectionMW} from '../../../../../../@mageworx/giftcards-veniapwa/src/UI/templates/GiftCardSection'");
+    const CheckoutGiftCardSectionMW = CheckoutPriceAdjustments_giftCards.addImport("{GiftCardSectionMW} from '../../../../../../@mageworx/gift-cards-veniapwa/src/UI/templates/GiftCardSection'");
     CheckoutPriceAdjustments_giftCards.replaceJSX(
         '<GiftCardSection setIsCartUpdating={setPageIsUpdating} />',
         `<${CheckoutGiftCardSectionMW} setIsCartUpdating={setPageIsUpdating} />`
@@ -51,7 +51,7 @@ function localIntercept(targets) {
     const MiniCartListingProduct_giftCards = giftCardsTargetables.reactComponent(
         '@magento/venia-ui/lib/components/MiniCart/ProductList/item.js'
     );
-    const GiftCardOptionsMW_MiniCartListing = MiniCartListingProduct_giftCards.addImport("{GiftCardOptionsMW} from '../../../../../../@mageworx/giftcards-veniapwa/src/UI/molecules/GiftCardOptions'");
+    const GiftCardOptionsMW_MiniCartListing = MiniCartListingProduct_giftCards.addImport("{GiftCardOptionsMW} from '../../../../../../@mageworx/gift-cards-veniapwa/src/UI/molecules/GiftCardOptions'");
     MiniCartListingProduct_giftCards.insertAfterJSX(
         '<ProductOptions/>',
         `<${GiftCardOptionsMW_MiniCartListing} mail_to={props.mail_to} mail_from={props.mail_from} mail_to_email={props.mail_to_email} mail_message={props.mail_message} mail_delivery_date={props.mail_delivery_date} classes={{options: classes.options}} />`
@@ -60,7 +60,7 @@ function localIntercept(targets) {
     const ProductListingProduct_giftCards = giftCardsTargetables.reactComponent(
         '@magento/venia-ui/lib/components/CartPage/ProductListing/product.js'
     );
-    const GiftCardOptionsMW_ProductListing = ProductListingProduct_giftCards.addImport("{GiftCardOptionsMW} from '../../../../../../@mageworx/giftcards-veniapwa/src/UI/molecules/GiftCardOptions'");
+    const GiftCardOptionsMW_ProductListing = ProductListingProduct_giftCards.addImport("{GiftCardOptionsMW} from '../../../../../../@mageworx/gift-cards-veniapwa/src/UI/molecules/GiftCardOptions'");
     ProductListingProduct_giftCards.insertAfterJSX(
         '<ProductOptions/>',
         `<${GiftCardOptionsMW_ProductListing} mail_to={item.mail_to} mail_from={item.mail_from} mail_to_email={item.mail_to_email} mail_message={item.mail_message} mail_delivery_date={item.mail_delivery_date} classes={{options: classes.options, optionLabel: classes.optionLabel}} />`
@@ -69,7 +69,7 @@ function localIntercept(targets) {
     const ItemsReviewItem_giftCards = giftCardsTargetables.reactComponent(
         '@magento/venia-ui/lib/components/CheckoutPage/ItemsReview/item.js'
     );
-    const GiftCardOptionsMW_ItemsReview = ItemsReviewItem_giftCards.addImport("{GiftCardOptionsMW} from '../../../../../../@mageworx/giftcards-veniapwa/src/UI/molecules/GiftCardOptions'");
+    const GiftCardOptionsMW_ItemsReview = ItemsReviewItem_giftCards.addImport("{GiftCardOptionsMW} from '../../../../../../@mageworx/gift-cards-veniapwa/src/UI/molecules/GiftCardOptions'");
     ItemsReviewItem_giftCards.insertAfterJSX(
         '<ProductOptions/>',
         `<${GiftCardOptionsMW_ItemsReview} mail_to={props.mail_to} mail_from={props.mail_from} mail_to_email={props.mail_to_email} mail_message={props.mail_message} mail_delivery_date={props.mail_delivery_date} classes={{options: classes.options}} />`
@@ -106,7 +106,7 @@ function localIntercept(targets) {
         'items {\n',
         graphqlItemsFragmentForGiftCards
     );
-    /* MageWorx giftcards-veniapwa end */
+    /* MageWorx gift-cards-veniapwa end */
 }
 
 module.exports = localIntercept;
