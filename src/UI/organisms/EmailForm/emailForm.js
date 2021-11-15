@@ -1,11 +1,11 @@
-import React, { forwardRef } from 'react';
+import React from 'react';
 import { useIntl } from 'react-intl';
 import DatePicker, { registerLocale } from "react-datepicker";
 require('react-datepicker/dist/react-datepicker.css');
 import TextInput from "../../atoms/TextInput/textInput";
 import Field from "../../molecules/Field/field";
 import TextArea from "../../atoms/TextArea/textArea";
-import { dateLocale } from "../../../date.locale";
+import { dateLocale } from "../../../../../../../mageworx/configs/GiftCards/date.locale";
 
 dateLocale.forEach(el => {
     registerLocale(el.name, el.data);
@@ -44,23 +44,23 @@ const EmailForm = props => {
 
     const messages = {
         "to_email": formatMessage({
-            id: 'MageWorx.giftCardSection.to_email',
+            id: 'mageworx.giftCardSection.to_email',
             defaultMessage: 'To email'
         }),
         "to_name": formatMessage({
-            id: 'MageWorx.giftCardSection.to_name',
+            id: 'mageworx.giftCardSection.to_name',
             defaultMessage: 'To name'
         }),
         "from_name": formatMessage({
-            id: 'MageWorx.giftCardSection.from_name',
+            id: 'mageworx.giftCardSection.from_name',
             defaultMessage: 'From name'
         }),
         "your_message": formatMessage({
-            id: 'MageWorx.giftCardSection.your_message',
+            id: 'mageworx.giftCardSection.your_message',
             defaultMessage: 'Message'
         }),
         "delivery_date": formatMessage({
-            id: 'MageWorx.giftCardSection.delivery_date',
+            id: 'mageworx.giftCardSection.delivery_date',
             defaultMessage: 'Delivery date'
         }),
     }

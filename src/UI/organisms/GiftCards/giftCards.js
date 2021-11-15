@@ -8,20 +8,19 @@ import { isRequired } from '@magento/venia-ui/lib/util/formValidators';
 import Button from '@magento/venia-ui/lib/components/Button';
 import Field from '@magento/venia-ui/lib/components/Field';
 import Icon from '@magento/venia-ui/lib/components/Icon';
+import LinkButton from '@magento/venia-ui/lib/components/LinkButton';
 import LoadingIndicator from '@magento/venia-ui/lib/components/LoadingIndicator';
 import TextInput from '@magento/venia-ui/lib/components/TextInput';
-import defaultClasses from '@magento/venia-ui/lib/components/CartPage/GiftCards/giftCards.css';
+import defaultClasses from './giftCards.module.css';
 import { useGiftCards } from '../../../features/Cart/GiftCards/useGiftCards';
 import GiftCard from './giftCard';
-
 import {
     GET_APPLIED_GIFT_CARDS_QUERY,
     GET_GIFT_CARD_BALANCE_QUERY,
     APPLY_GIFT_CARD_MUTATION,
     REMOVE_GIFT_CARD_MUTATION
 } from '../../../features/Cart/GiftCards/queries/giftCardQueries.gql';
-import LinkButton from '@magento/venia-ui/lib/components/LinkButton';
-import getFormattedPrice from "../../../features/Common/getFormattedPrice/getFormattedPrice";
+import getFormattedPrice from "../../../features/common/getFormattedPrice/getFormattedPrice";
 
 const errorIcon = (
     <Icon
@@ -70,7 +69,7 @@ const GiftCards = props => {
                 type: 'error',
                 icon: errorIcon,
                 message: formatMessage({
-                    id: 'MageWorx.giftCards.errorRemoving',
+                    id: 'mageworx.giftCards.errorRemoving',
                     defaultMessage:
                         'Unable to remove gift card. Please try again.'
                 }),
@@ -84,7 +83,7 @@ const GiftCards = props => {
         return (
             <LoadingIndicator>
                 <FormattedMessage
-                    id={'MageWorx.giftCards.loading'}
+                    id={'mageworx.giftCards.loading'}
                     defaultMessage={'Loading Gift Cards...'}
                 />
             </LoadingIndicator>
@@ -93,7 +92,7 @@ const GiftCards = props => {
 
     const cardEntryErrorMessage = shouldDisplayCardError
         ? formatMessage({
-              id: 'MageWorx.giftCards.errorInvalid',
+              id: 'mageworx.giftCards.errorInvalid',
               defaultMessage: 'Invalid card. Please try again.'
           })
         : null;
@@ -103,7 +102,7 @@ const GiftCards = props => {
         appliedGiftCards = (
             <span className={classes.errorText}>
                 <FormattedMessage
-                    id={'MageWorx.giftCards.errorLoading'}
+                    id={'mageworx.giftCards.errorLoading'}
                     defaultMessage={
                         'There was an error loading applied gift cards. Please refresh and try again.'
                     }
@@ -134,7 +133,7 @@ const GiftCards = props => {
         <div className={classes.balance}>
             <span className={classes.price}>
                 <FormattedMessage
-                    id={'MageWorx.giftCards.balance'}
+                    id={'mageworx.giftCards.balance'}
                     defaultMessage={'Balance: '}
                 />
                 {getFormattedPrice(checkBalanceData.balance.value, checkBalanceData.balance.currency_code, locale)}
@@ -154,7 +153,7 @@ const GiftCards = props => {
                 }}
                 id={classes.card}
                 label={formatMessage({
-                    id: 'MageWorx.giftCards.cardNumber',
+                    id: 'mageworx.giftCards.cardNumber',
                     defaultMessage: 'Gift Card Number'
                 })}
             >
@@ -167,7 +166,7 @@ const GiftCards = props => {
                         maskOnBlur={true}
                         message={cardEntryErrorMessage}
                         placeholder={formatMessage({
-                            id: 'MageWorx.giftCards.cardEntry',
+                            id: 'mageworx.giftCards.cardEntry',
                             defaultMessage: 'Enter card number'
                         })}
                         validate={isRequired}
@@ -186,7 +185,7 @@ const GiftCards = props => {
                     onClick={applyGiftCard}
                 >
                     <FormattedMessage
-                        id={'MageWorx.giftCards.apply'}
+                        id={'mageworx.giftCards.apply'}
                         defaultMessage={'Apply'}
                     />
                 </Button>
@@ -197,7 +196,7 @@ const GiftCards = props => {
                 onClick={checkGiftCardBalance}
             >
                 <FormattedMessage
-                    id={'MageWorx.giftCards.checkBalance'}
+                    id={'mageworx.giftCards.checkBalance'}
                     defaultMessage={'Check balance'}
                 />
             </LinkButton>

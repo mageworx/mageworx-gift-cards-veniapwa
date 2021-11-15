@@ -1,6 +1,6 @@
 import React from 'react';
 import { useStyle } from '@magento/venia-ui/lib/classify';
-import defaultClasses from './fieldIcons.css';
+import defaultClasses from './fieldIcons.module.css';
 
 const FieldIcons = props => {
     const { after, before, children } = props;

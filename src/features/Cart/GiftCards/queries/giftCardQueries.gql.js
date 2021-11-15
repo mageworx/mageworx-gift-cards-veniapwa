@@ -17,6 +17,12 @@ export const GET_APPLIED_GIFT_CARDS_QUERY = gql`
                   label
                 }
             }
+            prices {
+                grand_total {
+                   currency
+                   value
+                }
+            }
         }
     }
 `;
@@ -58,6 +64,12 @@ export const APPLY_GIFT_CARD_MUTATION = gql`
               label
             }
           }
+          prices {
+                grand_total {
+                   currency
+                   value
+                }
+          }
         }
       }
 }
@@ -84,6 +96,12 @@ export const REMOVE_GIFT_CARD_MUTATION = gql`
               currency_code
               label
             }
+          }
+          prices {
+                grand_total {
+                   currency
+                   value
+                }
           }
         }
       }

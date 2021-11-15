@@ -3,7 +3,7 @@ import { FormattedMessage } from 'react-intl';
 import { useStyle } from '@magento/venia-ui/lib/classify';
 import LinkButton from '@magento/venia-ui/lib/components/LinkButton';
 import { useGiftCard } from '../../../features/Cart/GiftCards/useGiftCard';
-import defaultClasses from './giftCard.css';
+import defaultClasses from './giftCard.module.css';
 
 const GiftCard = props => {
     const { code, currentBalance, isRemovingCard, removeGiftCard } = props;
@@ -21,7 +21,7 @@ const GiftCard = props => {
                 <span className={classes.code}>{code}</span>
                 <span className={classes.balance}>
                     <FormattedMessage
-                        id={'MageWorx.giftCard.balance'}
+                        id={'mageworx.giftCard.balance'}
                         defaultMessage={'Balance: '}
                     />
                     {currentBalance}
@@ -32,7 +32,7 @@ const GiftCard = props => {
                 onClick={removeGiftCardWithCode}
             >
                 <FormattedMessage
-                    id={'MageWorx.giftCard.remove'}
+                    id={'mageworx.giftCard.remove'}
                     defaultMessage={'Remove'}
                 />
             </LinkButton>

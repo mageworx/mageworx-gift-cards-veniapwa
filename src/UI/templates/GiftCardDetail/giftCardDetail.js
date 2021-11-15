@@ -1,9 +1,9 @@
 import React from 'react';
+import { useIntl } from "react-intl";
 import {useStyle} from "@magento/venia-ui/lib/classify";
-import defaultClasses from "./giftCardDetail.css";
+import defaultClasses from "./giftCardDetail.module.css";
 import EmailForm from "../../organisms/EmailForm/emailForm";
 import AmountForm from "../../organisms/AmountForm/amountForm";
-import { useIntl } from "react-intl";
 
 const GiftCardDetail = props => {
     const {
@@ -82,12 +82,12 @@ const GiftCardDetail = props => {
     }
 
     const CHOOSE_AMOUNT = formatMessage({
-        id: 'MageWorx.giftCardSection.choose_amount',
+        id: 'mageworx.giftCardSection.choose_amount',
         defaultMessage: 'Choose amount'
     });
 
     const SEND_INFORMATION = formatMessage({
-        id: 'MageWorx.giftCardSection.send_information',
+        id: 'mageworx.giftCardSection.send_information',
         defaultMessage: 'Send information'
     });
 

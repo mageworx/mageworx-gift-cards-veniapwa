@@ -1,5 +1,4 @@
 module.exports = targets => {
-    // For extends productFullDetail component in local-intercept
     const { Targetables } = require('@magento/pwa-buildpack');
     const targetables = Targetables.using(targets);
     targetables.setSpecialFeatures('esModules','cssModules');
@@ -10,24 +9,31 @@ module.exports = targets => {
     // product
     talonsTarget.tap((talonWrapperConfig) => {
         talonWrapperConfig.RootComponents.Product.useProduct.wrapWith(
-            "@mageworx/GiftCards-veniapwa/src/features/Product/Modify/targets/wrapUseProduct"
+            "@mageworx/gift-cards-veniapwa/src/features/Product/modify/targets/wrapUseProduct"
         );
     });
     talonsTarget.tap((talonWrapperConfig) => {
         talonWrapperConfig.ProductFullDetail.useProductFullDetail.wrapWith(
-            "@mageworx/GiftCards-veniapwa/src/features/Product/Modify/targets/wrapUseProductFullDetails"
+            "@mageworx/gift-cards-veniapwa/src/features/Product/modify/targets/wrapUseProductFullDetails"
         );
     });
 
     // cart
     talonsTarget.tap((talonWrapperConfig) => {
         talonWrapperConfig.CartPage.PriceSummary.usePriceSummary.wrapWith(
-            "@mageworx/GiftCards-veniapwa/src/features/Cart/Modify/targets/wrapUsePriceSummary"
+            "@mageworx/gift-cards-veniapwa/src/features/Cart/modify/targets/wrapUsePriceSummary"
+        );
+    });
+
+    // category
+    talonsTarget.tap((talonWrapperConfig) => {
+        talonWrapperConfig.Gallery.useAddToCartButton.wrapWith(
+            "@mageworx/gift-cards-veniapwa/src/features/Category/modify/targets/wrapUseAddToCartButton"
         );
     });
     talonsTarget.tap((talonWrapperConfig) => {
-        talonWrapperConfig.CartPage.PriceSummary.usePriceSummary.wrapWith(
-            "@mageworx/GiftCards-veniapwa/src/features/Cart/Modify/targets/wrapUsePriceSummary"
+        talonWrapperConfig.Gallery.useGalleryItem.wrapWith(
+            "@mageworx/gift-cards-veniapwa/src/features/Category/modify/targets/wrapUseGalleryItem"
         );
     });
 };

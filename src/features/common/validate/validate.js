@@ -7,19 +7,19 @@ const validate = (type, value, formatMessage) => {
 
     const messages = {
         "required": formatMessage({
-            id: 'MageWorx.giftCards.required',
+            id: 'mageworx.giftCards.required',
             defaultMessage: 'This is a required field'
         }),
         "not_valid_amount": formatMessage({
-            id: 'MageWorx.giftCards.not_valid_amount',
+            id: 'mageworx.giftCards.not_valid_amount',
             defaultMessage: 'Not valid amount'
         }),
         "not_valid_email": formatMessage({
-            id: 'MageWorx.giftCards.not_valid_email',
+            id: 'mageworx.giftCards.not_valid_email',
             defaultMessage: 'Not valid email'
         }),
         "not_valid_length": formatMessage({
-            id: 'MageWorx.giftCards.bigLength',
+            id: 'mageworx.giftCards.bigLength',
             defaultMessage: `Max length is `
         }),
     }
