@@ -24,16 +24,4 @@ module.exports = targets => {
             "@mageworx/giftcards-veniapwa/src/features/Cart/modify/targets/wrapUsePriceSummary"
         );
     });
-
-    // category
-    talonsTarget.tap((talonWrapperConfig) => {
-        talonWrapperConfig.Gallery.useAddToCartButton.wrapWith(
-            "@mageworx/giftcards-veniapwa/src/features/Category/modify/targets/wrapUseAddToCartButton"
-        );
-    });
-    talonsTarget.tap((talonWrapperConfig) => {
-        talonWrapperConfig.Gallery.useGalleryItem.wrapWith(
-            "@mageworx/giftcards-veniapwa/src/features/Category/modify/targets/wrapUseGalleryItem"
-        );
-    });
 };

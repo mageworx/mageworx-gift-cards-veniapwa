@@ -92,7 +92,7 @@ function localIntercept(targets) {
     );
 
     const ProductListingGql_GiftCard = giftCardsTargetables.module(
-        '@magento/peregrine/lib/talons/CartPage/ProductListing/productListingFragments.gql.js'
+        '@magento/venia-ui/lib/components/CartPage/ProductListing/productListingFragments.js'
     );
     ProductListingGql_GiftCard.insertAfterSource(
         'items {\n',
