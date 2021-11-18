@@ -12,7 +12,7 @@ const GiftCardSection = props => {
         <Section
             id={'gift_card'}
             title={formatMessage({
-                id: 'MageWorx.giftCards.cartSection',
+                id: 'mageworx.giftCards.cartSection',
                 defaultMessage: 'Gift Cards'
             })}
         >

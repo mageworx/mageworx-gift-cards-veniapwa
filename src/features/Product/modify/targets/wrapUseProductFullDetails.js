@@ -4,9 +4,9 @@ import {useCartContext} from "@magento/peregrine/lib/context/cart";
 import {useMutation} from "@apollo/client";
 import {deriveErrorMessage} from "@magento/peregrine/lib/util/deriveErrorMessage";
 import {ADD_GIFT_CARD_MUTATION} from "./queries/addGiftCardToCart.gql";
-import getFormattedPrice from "../../../Common/getFormattedPrice/getFormattedPrice";
+import getFormattedPrice from "../../../common/getFormattedPrice/getFormattedPrice";
 import useGiftCardDetailsForm from "../../../Product/GiftCardDetailForm/useGiftCardDetailForm";
-import validateResult from "../../../Common/validate/validate";
+import validateResult from "../../../common/validate/validate";
 
 function validate (amountFrom, amountTo, amountFromFormatted, amountToFormatted, formatMessage) {
     return function validateWithAmountValues (name, value) {
@@ -157,7 +157,7 @@ const wrapUseProductFullDetails = (original) => {
             let amounts = [];
             const option_default_price = {value: productDetails.price.value, label: getFormattedPrice(productDetails.price.value, productDetails.price.currency, locale)};
             const LABEL_OTHER_AMOUNT = formatMessage({
-                id: 'MageWorx.giftCards.other_amount',
+                id: 'mageworx.giftCards.other_amount',
                 defaultMessage: 'Custom amount'
             });
             const option_custom_amount = {value: "other_amount", label: LABEL_OTHER_AMOUNT};

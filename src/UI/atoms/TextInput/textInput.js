@@ -1,7 +1,6 @@
 import React from 'react';
-
 import { useStyle } from '@magento/venia-ui/lib/classify';
-import defaultClasses from './textInput.css';
+import defaultClasses from './textInput.module.css';
 
 const TextInput = props => {
     const {

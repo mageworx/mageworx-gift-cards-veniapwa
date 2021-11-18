@@ -1,8 +1,7 @@
 import React from 'react';
-
 import { useStyle } from '@magento/venia-ui/lib/classify';
 import Message from "../Message/message";
-import defaultClasses from './textArea.css';
+import defaultClasses from './textArea.module.css';
 
 const TextArea = props => {
     const {
