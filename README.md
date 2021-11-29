@@ -103,7 +103,7 @@ MiniCartProductListingGql_GiftCard.insertAfterSource(
 );
 
 const ProductListingGql_GiftCard = giftCardsTargetables.module(
-    '@magento/venia-ui/lib/components/CartPage/ProductListing/productListingFragments.js'
+    '@magento/peregrine/lib/talons/CartPage/ProductListing/productListingFragments.gql.js'
 );
 ProductListingGql_GiftCard.insertAfterSource(
     'items {\n',
